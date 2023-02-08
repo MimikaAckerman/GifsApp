@@ -1,0 +1,116 @@
+.container {
+    position:absolute;
+    width: 50rem;
+    margin-left: 15rem;
+    margin-top: 1rem;
+  }
+  
+  .container input {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 8px;
+  }
+  
+  
+  .container input:valid ~ label,
+  .container input:focus ~ label {
+    color: rgb(10, 131, 212);
+    transform: translateY(-15px);
+    
+  }
+  
+  .container i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #222;
+  }
+  
+  .container i:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #ff1b69, #ff0, #2196f3, #9c27b0, #ff1b69);
+    animation: animate 3s linear infinite;
+  }
+
+
+
+
+  .flip-card2 {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    grid-area: 1 / 1 / 6 / 5;
+
+    
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .flip-card-inner2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card2:hover .flip-card-inner2 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front2, .flip-card-back2 {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid white;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front2 {
+    background: linear-gradient(120deg, #F5B003 60%, black 88%,
+       black 40%, black 48%);
+    color: black;
+  }
+  
+  .flip-card-back2 {
+    background: linear-gradient(120deg, #F5B003  30%, black 88%,
+       black 40%, black 78%);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+.ContainerResultSearch{
+  margin-top: 10rem;
+ margin-left: 1rem;
+
+
+  }
+
+  .grid{
+    margin-left: 1rem;
+    margin-top: -2em;
+ 
+  }
