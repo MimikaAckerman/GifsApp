@@ -19,6 +19,7 @@ const GifRouter = () => {
             <Route path='/' element={<HomePage/>}/>
             <Route path="/GifsDetails/:title" element={<GifsDetails/>}/>
             <Route path="/SearchPage/" element={<SearchPage/>}/>
+       
 
         </Routes>
     </Router>

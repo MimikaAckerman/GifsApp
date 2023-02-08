@@ -1,60 +1,177 @@
 .button {
-    font-family: inherit;
-    font-weight: 400;
-    background: white;
-    color: black;
-    padding: 0.35em 0;
-    font-size: 17px;
-    border: none;
-    border-radius: 0.7em;
-    letter-spacing: 0.08em;
-    position: relative;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 3em;
-    width: 12em;
-    padding-left: 3em;
-    padding-right: 0.7em;
-   }
-   
-   .button .icon {
-    background: #F5B003;
-    margin-right: 1em;
-    height: 3em;
-    width: 3em;
-    border-radius: 0.5em;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 0.3em;
-    transition: all .7s;
-   }
-   
-  /*  .shere {
+  font-family: inherit;
+  font-weight: 400;
+  background: #1e213e;
+  color: white;
+  padding: 0.35em 0;
+  font-size: 17px;
+  border: none;
+  border-radius: 0.7em;
+  letter-spacing: 0.08em;
+  position: relative;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 3em;
+  width: 12em;
+  padding-left: 3em;
+  padding-right: 0.7em;
+}
+
+.button .icon {
+  background: #672e58;
+  margin-right: 1em;
+  height: 3em;
+  width: 3em;
+  border-radius: 0.5em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0.3em;
+  transition: all 0.7s;
+}
+
+/*  .shere {
     width: rem;
     height: 2rem;
     margin-left: 6px;
    }  */
-   
-   .button:hover .icon {
-    width: calc(100% - 0.6rem);
-   }
-   
-   .button:hover .shere {
-    width: calc(100% - 0.6rem);
-    display: none;
-   }
-   
-   .button .icon-shere {
-    color: white;
-    width: 1.5rem;
-    height: 1.5rem;
-    display: none;
-   }
-   
-   .button:hover .icon .icon-shere {
-    display: flex;
-   }
+
+.button:hover .icon {
+  width: calc(100% - 0.6rem);
+}
+
+.button:hover .shere {
+  width: calc(100% - 0.6rem);
+  display: none;
+}
+
+.button .icon-shere {
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: none;
+}
+
+.button:hover .icon .icon-shere {
+  display: flex;
+}
+
+/*estilo de la frase de inicio*/
+.wrapper {
+  height: 11vh;
+  width: 21rem;
+  margin-top: 0.1rem;
+  position: absolute;
+  /*  background-color: red;  */
+  margin-left: 1.5rem;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/*estilos de about me*/
+.card {
+  width: 13em;
+  height: 15em;
+  margin-top: 1rem;
+  margin-left: 1.2rem;
+  background: black;
+  transition: 1s ease-in-out;
+  clip-path: polygon(
+    30px 0%,
+    100% 0,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    0 100%,
+    0% 30px
+  );
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.card span {
+  font-weight: bold;
+  color: #f5b003;
+  text-align: center;
+  display: block;
+  padding-top: 1em;
+  font-size: 1em;
+}
+
+.card .info {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 0.1em;
+  font-size: 0.72em;
+  margin: 1em;
+  margin-top: 1em;
+}
+
+.card .img {
+  width: 4.8em;
+  height: 4.8em;
+  background: white;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 1.7em;
+}
+
+.card .share {
+  text-align: center;
+  margin-top: 1.8em;
+}
+
+.card a {
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+
+.card a:hover {
+  color: rgb(36, 116, 221);
+}
+
+.card button {
+  padding: 0.8em 1.7em;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  margin-top: 2em;
+  font-weight: bold;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  transition: 0.4s ease-in-out;
+}
+
+.card button:hover {
+  background: rgb(36, 116, 221);
+  color: white;
+}
