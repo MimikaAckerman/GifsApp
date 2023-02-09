@@ -1,6 +1,7 @@
 import React from "react";
 import "./style/GlobalStyle.css";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 const Login = () => {
  
   return (
@@ -16,7 +17,9 @@ const Login = () => {
           <div className="bg">
             <div className="bg-inner"></div>
           </div>
+            <Link to={`/LoginPage`}style={{ textDecoration: "none", color:'#F5B003' }}>
           <div className="text">Login</div>
+          </Link>
         </button>
       </LoginContainer>
     </>

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import "./style/style.css";
+
+
 const Search = ({ setCategory }) => {
   const [value, setValue] = useState("");
   const [error, setError] = useState(false);
@@ -20,7 +22,7 @@ const Search = ({ setCategory }) => {
     <>
     
       <SearchContainer>
-        <div class="container">
+        <div class="container2">
           <form onSubmit={SearchGif}>
             {/* {value} */}
             <input

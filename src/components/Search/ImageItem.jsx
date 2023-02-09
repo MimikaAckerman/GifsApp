@@ -1,7 +1,4 @@
 import React from "react";
-
-import styled from "styled-components";
-
 const ImagenItem = ({ title, url }) => {
   return (
     <>

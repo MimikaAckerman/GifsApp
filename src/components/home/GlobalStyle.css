@@ -98,9 +98,9 @@
 /*estilos de about me*/
 .card {
   width: 13em;
-  height: 15em;
-  margin-top: 1rem;
-  margin-left: 1.2rem;
+  height: 12em;
+  margin-top: 2.7rem;
+  margin-left: 0.7rem;
   background: black;
   transition: 1s ease-in-out;
   clip-path: polygon(
