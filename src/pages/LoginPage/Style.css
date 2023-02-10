@@ -64,7 +64,7 @@
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    
+    margin-left: 23rem;
     position: absolute;
     /* background-color: red; */
   }
