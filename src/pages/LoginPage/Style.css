@@ -122,3 +122,21 @@
     }
   }
   
+
+
+
+*{box-sizing: border-box;}
+html,body{height:100%;}
+@keyframes background{
+  100% {background-size: 4000px 1000px;}
+}
+body{
+  display: grid;
+  margin: 0;
+  padding: 0 24px;
+  background-image: url('../img/background.svg');
+  background-size: 2000px 1000px;
+  background-position: -500px 0;
+  color: #f9f9f9;
+  animation: background 10s infinite alternate linear;
+}

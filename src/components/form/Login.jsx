@@ -28,7 +28,5 @@ const Login = () => {
 
 export default Login;
 const LoginContainer = styled.div`
-  margin-left: 4.5rem;
-  position: absolute;
-  margin-top: 2rem;
+
 `;
