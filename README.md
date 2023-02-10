@@ -27,6 +27,9 @@ Install my-project with npm
   npm install my-project
   cd my-project
 ```
+
+## Initial Desing 🖌️
+- [Figma](https://www.figma.com/file/yGyAbbygkisPZeyKSJrkEi/Laptop-Mockup-(Community)?node-id=0%3A1&t=VJVhf5738xXwhA7V-1)
     
 ## Authors
 
