@@ -28,5 +28,6 @@ const Login = () => {
 
 export default Login;
 const LoginContainer = styled.div`
-
+margin-left: 4.5rem;
+margin-top: 2rem;
 `;

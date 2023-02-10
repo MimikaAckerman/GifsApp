@@ -25,6 +25,6 @@ const Logout = () => {
 export default Logout;
 
 const ContainerLogout = styled.div`
-  margin-top: 6.5rem;
+  margin-top: 2rem;
   margin-left: 3rem;
 `;
